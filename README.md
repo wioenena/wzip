@@ -7,13 +7,13 @@
 
 ### Installation
 ```bash
-v install wioenena-q.wzip
+v install --git https://github.com/wioenena-q/wzip
 ```
 
 ### Usage looks like this
 ```v
 import szip
-import wionenea_q.wzip
+import wzip
 
 fn main() {
     mut zip := szip.open("output.zip", .best_compression, .write)!
