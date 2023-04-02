@@ -2,14 +2,14 @@ module wzip
 
 import os
 
-pub struct WZipFileEntry {
+pub struct WZipFile {
 mut:
 	bytes []u8
 
 	path string
 }
 
-pub fn (mut self WZipFileEntry) get_bytes() ![]u8 {
+pub fn (mut self WZipFile) get_bytes() ![]u8 {
 	if self.bytes.len != 0 {
 		return self.bytes
 	}

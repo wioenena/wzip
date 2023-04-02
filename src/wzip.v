@@ -1,5 +1,5 @@
 module wzip
 
-interface WZipFile {
+interface IWZipFile {
 	path string
 }

@@ -9,22 +9,22 @@ fn main() {
 		zip.close()
 	}
 
-	mut dir_entry := &wzip.WZipDirEntry{
+	mut dir_entry := &wzip.WZipDir{
 		path: 'my_directory'
 		files: []
 	}
 
-	mut second_dir_entry := &wzip.WZipDirEntry {
+	mut second_dir_entry := &wzip.WZipDir {
 		path: "my_second_directory",
 		files: [
-			&wzip.WZipFileEntry {
+			&wzip.WZipFile {
 				path: "world.txt",
 				bytes: "World!".bytes()
 			}
 		]
 	}
 
-	file_entry := &wzip.WZipFileEntry{
+	file_entry := &wzip.WZipFile{
 		path: 'hello.txt'
 		bytes: 'Hello'.bytes()
 	}
